@@ -1,0 +1,11 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+
+  // https://docs.renovatebot.com/configuration-options/#packagerules
+  "packageRules": [
+    {
+      "matchPackageNames": ["uv", "astral-sh/uv-pre-commit"],
+      "groupName": "uv-version"
+    },
+  ],
+}

@@ -1,0 +1,30 @@
+ci:
+  autofix_commit_msg: 'chore: pre-commit.ci auto fixes'
+  autofix_prs: true
+  autoupdate_schedule: monthly
+  autoupdate_commit_msg: 'chore(deps): pre-commit autoupdate'
+
+repos:
+  - repo: https://github.com/pre-commit/pre-commit
+    rev: v4.1.0
+    hooks:
+      - id: validate_manifest
+
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v5.0.0
+    hooks:
+      - id: check-json
+        exclude: "\\.vscode/.*.json"
+      - id: check-toml
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+
+  - repo: https://github.com/python-jsonschema/check-jsonschema
+    rev: 0.31.1
+    hooks:
+      - id: check-renovate
+        files: "^renovate/.*\\.json5$"
+        language: python
+        additional_dependencies:
+        - pyjson5==1.6.8
