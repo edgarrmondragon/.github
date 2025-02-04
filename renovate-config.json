@@ -1,0 +1,8 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "description": "Onboarding config preset used for @edgarrmondragon repositories",
+    "onboardingConfig": {
+      "$schema": "https://docs.renovatebot.com/renovate-schema.json"
+    },
+    "onboardingConfigFileName": ".github/renovate.json5"
+}
