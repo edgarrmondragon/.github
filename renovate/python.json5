@@ -7,4 +7,12 @@
     // https://github.com/edgarrmondragon/.github/blob/main/renovate/base.json5
     "edgarrmondragon/.github//renovate/base.json5"
   ],
+
+  "packageRules": [
+    {
+      "matchDatasources": ["pypi"],
+      "matchPackageNames": ["requests", "types-requests"],
+      "groupName": "requests",
+    },
+  ],
 }
