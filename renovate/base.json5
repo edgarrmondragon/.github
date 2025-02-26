@@ -33,4 +33,12 @@
     "enabled": true,
     "schedule": ["* * * * 0,6"]
   },
+
+  // https://docs.renovatebot.com/configuration-options/#packagerules
+  "packageRules": [
+    {
+      "matchPackageNames": ["actions/upload-artifact", "actions/download-artifact"],
+      "groupName": "GitHub artifact actions",
+    },
+  ]
 }
