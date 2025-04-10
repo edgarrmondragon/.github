@@ -25,23 +25,31 @@
   // https://docs.renovatebot.com/configuration-options/#labels
   "labels": ["dependencies"],
 
+  // https://docs.renovatebot.com/configuration-options/#timezone
+  "timezone": "America/Mexico_City",
+
   // https://docs.renovatebot.com/configuration-options/#schedule
-  "schedule": ["* * * * 0,6"],
+  "schedule": ["* 12-18 10 * *"],
 
   // https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["* * * * 0,6"]
+    "schedule": ["* * * * 0"]
   },
 
   // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
-  "minimumReleaseAge": "7 days",
+  "minimumReleaseAge": "14 days",
 
   // https://docs.renovatebot.com/configuration-options/#packagerules
   "packageRules": [
     {
       "matchPackageNames": ["actions/upload-artifact", "actions/download-artifact"],
       "groupName": "GitHub artifact actions",
+    },
+    {
+      "matchManagers": ["github-actions", "pre-commit"],
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true,
     },
   ]
 }
