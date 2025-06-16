@@ -60,5 +60,9 @@
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
     },
+    {
+      "matchPackageNames": ["tox", "tox-uv"],
+      "groupName": "Tox packages",
+    },
   ]
 }
