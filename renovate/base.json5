@@ -56,6 +56,16 @@
       "groupName": "GitHub artifact actions",
     },
     {
+      "matchManagers": ["pre-commit"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "pre-commit minor and patch updates"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "github-actions minor and patch updates"
+    },
+    {
       "matchManagers": ["github-actions", "pre-commit"],
       "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
       "automerge": true,
