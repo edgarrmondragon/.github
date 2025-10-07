@@ -43,12 +43,6 @@
   // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
   "minimumReleaseAge": "3 days",
 
-  // https://docs.renovatebot.com/configuration-options/#separatemultipleminor
-  "separateMultipleMinor": true,
-
-  // https://docs.renovatebot.com/configuration-options/#separateminorpatch
-  "separateMinorPatch": true,
-
   // https://docs.renovatebot.com/configuration-options/#packagerules
   "packageRules": [
     {

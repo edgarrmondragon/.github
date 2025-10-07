@@ -18,4 +18,13 @@
 
   // https://docs.renovatebot.com/configuration-options/#platformautomerge
   "platformAutomerge": true,
+
+  // https://docs.renovatebot.com/configuration-options/#packagerules
+  "packageRules": [
+    {
+      "matchPackageNames": ["singer-sdk"],
+      "groupName": "Singer SDK",
+      "automerge": false,
+    },
+  ],
 }
