@@ -5,7 +5,8 @@
   "packageRules": [
     {
       "matchPackageNames": ["uv", "astral-sh/uv-pre-commit"],
-      "groupName": "uv-version"
+      "groupName": "astral-sh/uv",
+      "groupSlug": "astral-sh-uv",
     },
   ],
 }
