@@ -28,9 +28,3 @@ repos:
         language: python
         additional_dependencies:
         - pyjson5==2.0.0
-
-  - repo: https://github.com/renovatebot/pre-commit-hooks
-    rev: 42.66.0
-    hooks:
-      - id: renovate-config-validator
-        args: [--strict]
