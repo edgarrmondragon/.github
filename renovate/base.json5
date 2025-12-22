@@ -41,7 +41,7 @@
   },
 
   // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
-  "minimumReleaseAge": "3 days",
+  "minimumReleaseAge": "7 days",
 
   // https://docs.renovatebot.com/configuration-options/#packagerules
   "packageRules": [
