@@ -29,15 +29,21 @@
   "timezone": "America/Mexico_City",
 
   // https://docs.renovatebot.com/configuration-options/#schedule
-  "schedule": ["* 12-18 * * 1"],
+  "schedule": [
+    "* * 1 */3 *",
+  ],
 
   // https://docs.renovatebot.com/configuration-options/#automergeschedule
-  "automergeSchedule": ["* 7-9 * * 3"],
+  "automergeSchedule": [
+    "* 7-9 * * 3",
+  ],
 
   // https://docs.renovatebot.com/configuration-options/#lockfilemaintenance
   "lockFileMaintenance": {
     "enabled": true,
-    "schedule": ["* 7-9 * * 1"]
+    "schedule": [
+      "* * 1 */3 *",
+    ]
   },
 
   // https://docs.renovatebot.com/configuration-options/#minimumreleaseage
