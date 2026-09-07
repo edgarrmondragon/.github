@@ -6,6 +6,9 @@
     // https://docs.renovatebot.com/presets-config/#configbase
     "config:recommended",
 
+    // https://docs.renovatebot.com/configuration-options/#dependencydashboard
+    ":disableDependencyDashboard",
+
     // https://docs.renovatebot.com/presets-default/#enableprecommit
     ":enablePreCommit",
 
