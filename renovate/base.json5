@@ -19,6 +19,9 @@
     "customManagers:githubActionsVersions"
   ],
 
+  // https://docs.renovatebot.com/configuration-options/#rebasewhen
+  "rebaseWhen": "conflicted",
+
   // https://docs.renovatebot.com/configuration-options/#assigneesfromcodeowners
   "assigneesFromCodeOwners": true,
 
