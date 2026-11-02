@@ -67,6 +67,10 @@
       "groupName": "pre-commit minor and patch updates"
     },
     {
+      "matchPackageNames": ["pre-commit", "pre-commit/pre-commit"],
+      "groupName": "pre-commit-version"
+    },
+    {
       "matchManagers": ["github-actions"],
       "matchUpdateTypes": ["minor", "patch"],
       "groupName": "github-actions minor and patch updates"
